@@ -23,7 +23,6 @@ public class CounterRequestController {
     @GetMapping("/v1/request/count")
     public Long getRequestsCount() {
 
-        System.out.println("___________________");
         return counterRequestsServer.increaseCounter(counter);
     }
 }
